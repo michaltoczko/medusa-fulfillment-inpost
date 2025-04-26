@@ -1,5 +1,5 @@
 import { RouteConfig } from "@medusajs/admin"
-import { useAdminCustomQuery } from "medusa-react"
+import { useAdminCustomQuery } from "@medusajs/react"
 import { useNavigate, useSearchParams } from "react-router-dom"
 import { Container, Table, IconButton } from "@medusajs/ui"
 import { ArrowDownCircle } from "@medusajs/icons"

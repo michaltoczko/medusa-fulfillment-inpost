@@ -1,5 +1,5 @@
 import type { WidgetConfig, OrderDetailsWidgetProps } from "@medusajs/admin"
-import { useAdminCustomQuery } from "medusa-react"
+import { useAdminCustomQuery } from "@medusajs/react"
 import { Container } from "@medusajs/ui"
 
 const ParcelDetails = ({ shippingMethod }) => {

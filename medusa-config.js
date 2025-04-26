@@ -51,10 +51,20 @@ const plugins = [
       },
     },
   },
+  {
+    resolve: `medusa-fulfillment-inpost`,
+    options: {
+      enableUI: true,
+      base_url: process.env.INPOST_BASE_URL, // required
+      token: process.env.INPOST_TOKEN, // required
+      organization_id: process.env.INPOST_ORGANIZATION_ID, // required
+      default_template: process.env.INPOST_DEFAULT_TEMPLATE, // default: medium, size of the package
+    },
+  },
 ];
 
 const modules = {
-  /*eventBus: {
+  eventBus: {
     resolve: "@medusajs/event-bus-redis",
     options: {
       redisUrl: REDIS_URL
@@ -65,7 +75,7 @@ const modules = {
     options: {
       redisUrl: REDIS_URL
     }
-  },*/
+  },
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
